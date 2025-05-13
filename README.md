@@ -8,7 +8,7 @@ respectivo link. A página de cada artista apresentará uma biografia, as músic
 os álbuns mais vendidos, artistas de gêneros musicais semelhantes e os links para as redes 
 sociais do artista.
 
-#integrantes
+#Integrantes
 °Ana Beatriz da Silva Linhares;
 °Daniel De Lima Costa dos Santos;
 °Jose Gustavo Martinho Araújo de Almeida;
