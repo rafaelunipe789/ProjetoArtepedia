@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo_chorao.css"> 
+  <title>Enciclopédia Livre - Exemplo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>A vida é feita de escolhas</h1>
+    <img src="https://www.theaudiodb.com/images/media/artist/logo/charlie-brown-jr-4e5ff2c391b2c.png" class="imagem">
+  </header>
+
+  <section id="introducao">
+    <h2>Introdução</h2>
+    <p>Charlie Brown Jr. foi uma banda brasileira de rock formada em 1992, em Santos (SP). Liderada pelo vocalista Chorão, misturava estilos como rock, punk, rap, reggae e skate culture em suas letras e som. Ficou conhecida por sucessos como Proibida Pra Mim, Zóio de Lula e Dias de Luta, Dias de Glória. A banda marcou gerações e teve grande influência na cena do rock nacional até o falecimento de Chorão em 2013.</p>
+  </section>
+
+  <section id="historia">
+    <h2>História</h2>
+    <p>Idealizada pelo vocalista Alexandre Magno Abrão, mais conhecido como Chorão. A formação original incluía, além de Chorão, Thiago Castanho (guitarra), Marcão Britto (guitarra), Champignon (baixo) e Renato Pelado (bateria). O nome da banda foi inspirado em um grafite com o personagem Charlie Brown e o "Jr." foi adicionado por sugestão de Chorão para dar mais originalidade.</p>
+
+<br><b>Início e Mudanças na Formação</b><br>
+<p>No início, a banda passou por algumas dificuldades até assinar com a gravadora Virgin Records. Ao longo dos anos, ocorreram diversas mudanças na formação. Os membros mais constantes foram Chorão e, em parte da trajetória, Champignon. Houve brigas internas, principalmente entre Chorão e outros integrantes, que causaram afastamentos e retornos, como o de Champignon e Marcão em diferentes períodos. Em 2005, Thiago Castanho, que havia saído anos antes, retornou à banda.</p>
+
+<br><b>Carreira e Sucesso</b><br>
+<p>O primeiro álbum, Transpiração Contínua Prolongada (1997), foi um sucesso e lançou hits como Proibida pra Mim e O Coro Vai Comer. O segundo álbum, Preço Curto... Prazo Longo (1999), consolidou o sucesso com faixas como Zóio de Lula e Te Levar. Outros álbuns de destaque incluem Nadando com os Tubarões (2000), Abalando a Sua Fábrica (2001) e Bocas Ordinárias (2002).
+
+A banda misturava rock, rap, reggae, hardcore e skate, o que a fez se destacar por sua autenticidade e identificação com o público jovem. Charlie Brown Jr. recebeu diversos prêmios, incluindo Grammy Latino de Melhor Álbum de Rock Brasileiro por Camisa 10 Joga Bola Até na Chuva (2009). Os shows da banda sempre foram marcados por energia intensa, e eles tocaram em grandes festivais, como o Rock in Rio e o Planeta Atlântida.</p>
+
+<br><b>Morte de Chorão e Impacto</b><br>
+<p>Em 6 de março de 2013, Chorão foi encontrado morto em seu apartamento em São Paulo, vítima de uma overdose de cocaína. Sua morte causou grande comoção nacional, já que ele era visto como porta-voz da juventude e de temas como rebeldia, superação e críticas sociais. Meses depois, em setembro de 2013, o baixista Champignon também faleceu, vítima de suicídio, o que marcou tragicamente o fim da trajetória da banda.
+
+Charlie Brown Jr. se tornou um dos maiores nomes do rock brasileiro dos anos 2000. Sua música influenciou uma geração inteira, e suas letras continuam sendo lembradas por refletirem a vida urbana, os conflitos internos e o espírito do jovem brasileiro.</p>
+  </section>
+
+  <section id="curiosidades">
+    <h2>Albuns e musicas</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/48/Imunidade_Musical.jpg/250px-Imunidade_Musical.jpg">
+   <div>
+    <a href="https://open.spotify.com/intl-pt/album/1l8K5fgYz4J0ZZyjMVd6Q1" target="_blank">Visite o Album: Imunidade musical</a>
+   </div>
+   <img src="https://upload.wikimedia.org/wikipedia/pt/7/76/La_Fam%C3%ADlia_013.jpg" class="imagem_meio">
+   <div>
+    <a href="https://open.spotify.com/intl-pt/album/53GOG940xY4LOpgD8YzQrJ" target="_blank">Visite o Album: La Familia 13</a>
+   </div>
+  </section>
+
+  <section id="referencias">
+    <h2>redes sociais</h2>
+    <ol>
+      <li>Livro, artigo ou site usado como fonte.</li>
+      <li>Outras publicações relevantes.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Este conteúdo é de domínio público ou baseado em fontes abertas. Última atualização: Maio de 2025.</p>
+     <nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#historia">História</a>
+    <a href="#curiosidades">Albuns e musicas</a>
+    <a href="#referencias">Perfis sociais</a>
+  </nav>
+
+  </footer>
+
+</body>
+</html>
