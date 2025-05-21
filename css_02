@@ -1,0 +1,104 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+      color: #202122;
+    }
+    header {
+      background-color: #bad9c8;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    nav {
+      margin: 20px 0;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0645ad;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h1, h2 {
+      color: #202122;
+    }
+    footer {
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  
+.container_ {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  padding: 20px;
+  background-color: #c0dfd0; 
+}
+@media (max-width: 800px) {
+  .container_ {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 500px) {
+  .container_ {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.img-albuns {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/*O conteiner abaixo é para a parte aonde fica o nome do site e a logo*/
+.container {
+  display: flex;
+  align-items: center;       
+  justify-content: center;  
+  height: 100px;            
+  gap: 20px;                
+}
+
+.texto {
+  font-size: 18px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem {
+  height: 50px;            
+}
+.caixa-texto {
+      max-width: 100%;       
+      height: 600px;         
+      border: 2px solid #000;
+      padding: 10px;
+      overflow-y: auto;     
+      font-family: monospace; 
+      white-space: pre-line; 
+      background-color: #f9f9f9;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      .caixa-texto {
+        height: 150px; 
+      }
+    }
+    .imagem-centralizada {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; 
+  height: auto;
+}
