@@ -107,7 +107,6 @@ section.perfil .main {
     border-radius: 5px;
     box-shadow: 2px 2px 0 0 gray;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
 }
 
 .album img {
