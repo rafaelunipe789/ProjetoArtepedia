@@ -1,167 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Enciclopédia sobre Wesley Safadão: história, curiosidades, álbuns e muito mais." />
-  <title>Artepédia</title>
-  <link rel="stylesheet" href="assets/css/wesley.css">
-</head>
-<body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Artepédia</title>
+        <link rel="stylesheet" href="../css/artista.css">
+    </head>
+    <body>
+        <header>
+            <a class="logo-nome" href="../../index.html" style="color: white;">Artepédia</a>
+            <ul>
+                <a href="#perfil">Perfil</a>
+                <a href="#lancamentos">Lançamentos</a>
+                <a href="#sobre">Sobre</a>
+            </ul>
+        </header>
+        <!-- 3 frações para o main, 1 fração para  -->
+        <div 
+        style="display: grid;
+        grid-template-columns: 3fr 1fr">
+            <main>
+                <section class="perfil" id="perfil">
+                    <div class="main">
+                        <div class="esquerda">
+                            <img class="image-perfil" style="border-radius: 50%;" src="https://i.scdn.co/image/ab676161000051740af28bb695bee12eb564990d" alt="Imagem de perfil Wesley">
+                        </div>
+                        <div class="direita">
+                            <h2 class="artistic-name">Wesley Safadão</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="social">
+                        <div>
+                            <h3>Ouvir</h3>
+                            <ul>
+                                <li class="social-link">
+                                    <a href="https://www.youtube.com/@wesleysafadao"><img src="https://www.gstatic.com/kpui/listen/youtube_icon_44x44.png" alt="Icone YouTube">YouTube</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://open.spotify.com/intl-pt/artist/1AL2GKpmRrKXkYIcASuRFa"><img src="https://www.gstatic.com/kpui/listen/spotify_44x44.png" alt="Icone Spotify">Spotify</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.youtube.com/channel/UClG_7_PRAIW6VeGCbeA2U0w"><img src="https://www.gstatic.com/kpui/listen/youtube_music_44x44.png" alt="Icone Youtube Music">YT Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.apple.com/br/artist/wesley-safad%C3%A3o/631718514"><img src="https://www.gstatic.com/kpui/listen/apple_music_icon_44x44.png" alt="Icone Apple Music">Apple Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.apple.com/br/artist/wesley-safad%C3%A3o/631718514"><img src="https://www.gstatic.com/kpui/listen/deezer_44X44.png" alt="Icone Deezer">Deezer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Perfis</h3>
+                            <ul>
+                                <li class="social-link"><a href="https://www.instagram.com/wesleysafadao/"><img src="data:image/png;base64,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" alt="Icone Instagram">Instagram</a></li>
+                                <li class="social-link"><a href="https://x.com/WesleySafadao"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABhUlEQVR4AczOA6xcARCF4X/us23btuLUQR3WZlhbQW3bto2gtm3b2J3GN4tY74uHh3okOi42Nj4AAUDwTvDEhisABCOAEAzYTBh0bN+lc5d0QgAhHPqX4Y4pkd367Zc+xMcXCPDg8TPwxeQH724Uj9N95GJ4pnHxby1xgCmV3v+GsFb7k0Iee7UjaQgmIYe9v9O4+wUKWaATyMPAViwvr1NnOQWDdTV5CHYSaKWLmaGDyvU4mTgQcllracaFr+9uk+yLM8k8fAJff0IUTghRVFu3M1ynkYk4nchiqqU3Ry05RDibMMhjtj6Ht3dJxVk/l1G64cspOusychBsCWm01WNM0jFs0sbEYUtIIuTXNco588OLh09JxE6wweuXEAvfL9PQus3+iU80N34KCaQyUOcxTTuSjEmMRI5rS9JwIZfD1t7ceo34YIpnuQ4nGwP8XXlq/fJZd9jE8KBHC5IwAELJ7dWrZ6fOuNhkgFgAEEIAwA1MQkw0AgDC/wnKycrKSQ2iPAkAVyNzq8rxicIAAAAASUVORK5CYII=" alt="Icone X">X</a></li>
+                                <li class="social-link"><a href="https://www.youtube.com/@wesleysafadao"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEX/////z8//n5//kJD/gID/cHD/YGD/v7//39//ICD/AAD/r6//EBD/7+//oKD/MDD/QED/UFD/X1//j4//f396G04EAAAAhklEQVR4AeXQRQLDQAwDQC3bajj5/1dLYb63czYKf8VY50OcBO9swkyUB/SBkfJQlqOXeKJAz/FEQM9zVCqXInqRIy+RC9W+AJDypgCwyoGiV68LkLJFwX6CVJcr8nBwZJgLXMaDAs9RxsMcLE949IQnEnpoeKjEpC25o12OpVwkTURy/JQX1r4RC2S7kZYAAAAASUVORK5CYII=" alt="Icone YouTube">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="lancamentos">
+                    <h3>Lançamentos Populares</h3>
+                    <div class="albums">
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/20wBgOGIjSo3lWwgXfishN">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/4/48/Wesley_Safad%C3%A3o_-_WS_In_Miami_Beach.png" alt="Capa do Album WS In Miami Beach">
+                            <h4>WS In Miami Beach<span style="color: gray;">• 2017 - Álbum</span></h4>
+                        </a>
+                        <!--  -->
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/4ABAabvbhmGJKOXvjpzwPa?si=-4r8AzNoRtm1n4ZBi7j34Q">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/2/27/Diferente_n%C3%A3o%2C_estranho_-_Wesley_Safad%C3%A3o.jpg" alt="Capa do Album Diferente não, estranho">
+                            <h4>Diferente não, Estranho <span style="color: gray;">• 2018 - Álbum</span></h4>
+                        </a>
+                        
+                        <!--  -->
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/2cgUy966sjetpYuW3HXRx5?si=C5ppeE6nSfSZGUPyo8OXWA">
+                            <img src="https://i.scdn.co/image/ab676161000051740af28bb695bee12eb564990d" alt="Capa do Album Bem vindo ao meu mundo - forró e vaqueijada">
+                            <h4>Bem vindo ao meu mundo - forró e vaqueijada <span style="color: gray;">• 2025 - Álbum</span></h4>
+                        </a>
 
-  <header>
-    <img src="https://i.ibb.co/V0MLw86x/Capturar.png" alt="Banner de Wesley Safadão" class="banner">
-  </header>
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/0nPrz2ZyxXe6vLuDVsmb4I?si=fRljVu8hTxegAPfbOuCqSA">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273adf3396746f2e57072a67692" alt="Capa do Album Wesley ao vivo em Brasília">
+                            <h4>Wesley ao vivo em Brasília<span style="color: gray;">• 2016 - Álbum</span></h4>
+                        </a>
+                    </div>
+                </section>
+                <hr>
+                <section id="sobre" class="sobre">
+                    <h3>Sobre</h3>
+                    <p style="text-align: justify;">
+                        Wesley Safadão começou sua trajetória em 2003 liderando a banda Garota Safada, com a qual lançou sete álbuns de áudio e 
+                        dois de vídeo, destacando-se com músicas como "Disco Voador". Em 2007, ganhou relevância no Nordeste, expandindo-se 
+                        posteriormente para todo o Brasil. Seu primeiro álbum solo, Ao Vivo em Brasília (2015), consolidou sua carreira nacional, 
+                        com hits como "Camarote" e certificação de disco de platina duplo por mais de 160 mil cópias vendidas.
+                    </p>                    
+                </section>
+            </main>
+            <aside>
+                <h3>Faixas Populares</h3>
+                <ul class="lista-faixas">
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/4dGx53NJZJyuuLP5ownH1p">
+                            <div>
+                                <img src="https://cdn-images.dzcdn.net/images/cover/1b82e3ca0b79b9ffe7fcc34c94bee619/0x1900-000000-80-0-0.jpg" alt="Imagem Faixa">
+                                <span>Mentira estampada</span>
+                            </div>
+                            <span style="color: gray;">2:53</span>
+                        </a>
+                    </li>
 
-  <nav class="menu">
-    <a href="#introducao">Introdução</a>
-    <a href="#historia">História</a>
-    <a href="#albuns">Álbuns e Músicas</a>
-    <a href="#redes">Redes Sociais</a>
-  </nav>
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/7pBPXkaVQaP3Y3Wwfkpvbn">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d0000b273e295ee75598a12d933800298" alt="Imagem Faixa">
+                                <span href="">Mentirosa</span>
+                            </div>
+                            <span style="color: gray;">2:45</span>
+                        </a>
+                    </li>
 
-  <main>
-    <section id="introducao">
-      <h2>Introdução</h2>
-      <p>
-        Wesley Safadão é um cantor, compositor e produtor musical brasileiro. Ele
-        começou sua carreira na banda Garota Safada, onde ganhou destaque com seu
-        estilo animado e carismático. Conhecido por sua voz marcante, apresentações
-        enérgicas e hits como "Camarote", "Aquele 1%" e "Ar Condicionado no 15", 
-        Wesley é também reconhecido por sua forte presença nas redes sociais e 
-        por arrastar multidões em seus shows. Além da carreira musical, ele é 
-        empresário e investe em outros segmentos do entretenimento.
-      </p>
-    </section>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/track/0uAFGvNJOQMyB4UZN7qoIB" class="faixa-item">
+                            <div>
+                                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2025/03/07/1585274472-wesley-safadao-2-divulgacao.png" alt="Imagem Faixa">
+                                <span>Seis cordas</span>
+                            </div>
+                            <span style="color: gray;">5:15</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/4HrIZyZIqd7kqShDXEyN1n">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d0000b273dea6a4c61253bf72595c5f35" alt="Imagem Faixa">
+                                <span>Laranjinha</span>
+                            </div>
+                            <span style="color: gray;">3:03</span>
+                        </a>
+                    </li>
 
-    <section id="historia">
-      <h2>História</h2>
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/10ogXfLjDtiKAWw48kXu9Q">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d0000b273037ca341d5fd77e65563c4b1" alt="Imagem Faixa">  
+                                <span>Sede de te amar</span>
+                            </div>
+                            <span style="color: gray;">3:38</span>
+                        </a>
+                    </li>
 
-      <h3>Origens</h3>
-      <p>
-        Wesley Oliveira da Silva, conhecido nacionalmente como Wesley Safadão, 
-        nasceu em 6 de setembro de 1988, em Fortaleza, Ceará. Ele é filho de Maria Valmira Silva de Oliveira,
-        conhecida como Dona Bill, e Wellington Nonato da Silva. 
-        Sua mãe foi fundadora da banda Garota Safada, onde Wesley começou sua carreira.
-      </p>
+                    
+                </ul>
+                <hr>
+                <h3>Artistas Recomendados</h3>
 
-      <h3>A Ascensão ao Sucesso</h3>
-      <p>
-        O grande estouro aconteceu em 2015, quando Wesley iniciou sua carreira
-        solo e lançou o hit "Camarote", que o catapultou para o cenário nacional.
-        Com uma mistura de forró moderno, música pop e batidas dançantes, ele
-        ganhou o coração do público.
-      </p>
-
-      <h3>Parcerias e Carreira</h3>
-      <p>
-        Ao longo de sua carreira, Wesley fez parcerias com grandes nomes
-        da música brasileira, como Luan Santana, Anitta e Simone & Simaria.
-        Seus shows são conhecidos pela animação e estrutura grandiosa.
-      </p>
-
-      <h3>Além da Música</h3>
-      <p>
-        Mais do que um cantor, Wesley é empresário e produtor, investindo
-        em projetos musicais e eventos. Ele também passou por mudanças
-        marcantes, adotando um visual mais maduro.
-      </p>
-
-      <h3>Vida Pessoal</h3>
-      <p>
-        Fora dos palcos, Wesley é casado e pai de três filhos. Valoriza a família e
-        busca equilíbrio entre a carreira e a vida pessoal.
-      </p>
-
-      <h3>Resgate do Forró e da Vaquejada</h3>
-      <p>
-        <strong><ins>Projeto “Bem-Vindo ao Meu Mundo: Forró & Vaquejada”:</ins></strong>
-        Wesley é um dos maiores responsáveis por fazer renascer, modernizar 
-        e divulgar o forró e a vaquejada. Seu álbum, lançado em 2025, foi 
-        gravado na Arena Jampa, em João Pessoa, com 24 faixas que celebram 
-        a cultura nordestina.
-      </p>
-    </section>
-
-    <section id="albuns">
-      <h2>Álbuns e Músicas</h2>
-
-      <h3>Álbuns Mais Famosos</h3>
-      <ul>
-        <li>
-          <figure>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoi02ovg_1sKo-RVVlq5uZMua360KrfjHQbA&s" alt="Capa do álbum Ao Vivo em Brasília" width="200" height="200">
-            <figcaption>Ao Vivo em Brasília (2015)</figcaption>
-          </figure>
-          <a href="https://open.spotify.com/intl-pt/album/0nPrz2ZyxXe6vLuDVsmb4I" target="_blank" rel="noopener noreferrer">
-            Ouça no Spotify
-          </a>
-        </li>
-        <li>
-          <figure>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoMiWmBxpisjVuY5B2Kf4X964uaHQnZQHxg&s" alt="Capa do álbum WS Em Casa" width="200" height="200">
-            <figcaption>WS Em Casa (2016)</figcaption>
-          </figure>
-          <a href="https://open.spotify.com/intl-pt/album/2NYBzUfyld0Zz9Mt8DGSNg" target="_blank" rel="noopener noreferrer">
-            Ouça no Spotify
-          </a>
-        </li>
-      </ul>
-
-      <h3>Músicas Mais Famosas</h3>
-      <ul>
-        <li>
-          <figure>
-            <img src="https://i.ibb.co/9mNqvqpL/s.jpg" alt="Capa da música Camarote" width="200" height="200">
-            <figcaption>Camarote</figcaption>
-          </figure>
-          <a href="https://open.spotify.com/intl-pt/track/3BsW6THYx5Li44uxeO6LKI" target="_blank" rel="noopener noreferrer">
-            Ouça no Spotify
-          </a>
-        </li>
-        <li>
-          <figure>
-            <img src="https://i.ibb.co/wZcfjfYs/maxresdefault.jpg" alt="Capa da música Ar Condicionado no 15" width="200" height="200">
-            <figcaption>Ar Condicionado no 15</figcaption>
-          </figure>
-          <a href="https://open.spotify.com/intl-pt/track/59iqQY09BBJD3cSvojPsh0" target="_blank" rel="noopener noreferrer">
-            Ouça no Spotify
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="redes">
-      <h2>Redes Sociais</h2>
-      <ol>
-        <li>
-          Instagram: 
-          <a href="https://www.instagram.com/wesleysafadao/?hl=pt-br" target="_blank" rel="noopener noreferrer">
-            Acesse o Instagram de Wesley Safadão
-          </a>
-        </li>
-        <li>
-          Spotify:
-          <a href="https://open.spotify.com/intl-pt/artist/1AL2GKpmRrKXkYIcASuRFa" target="_blank" rel="noopener noreferrer">
-            Acesse o Spotify de Wesley Safadão
-          </a>
-        </li>
-        <li>
-          Site Oficial:
-          <a href="https://wesleysafadao.com.br/" target="_blank" rel="noopener noreferrer">
-            Site Oficial de Wesley Safadão
-          </a>
-        </li>
-      </ol>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      Este conteúdo é de domínio público ou baseado em fontes abertas. Última
-      atualização: Maio de 2025.
-    </p>
-  </footer>
-
-</body>
+                <ul class="lista-artistas">
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/43DRDu6nLSeIedZ7T1A616" class="artista-item">
+                            <div>
+                                <img src="https://pida.com.br/fotos/pida_noticias/3271/IMAGEM_INTERNA_0.jpg?v=281fc192d6dbd49" alt="Imagem Artista">
+                                <span>Xand Avião</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/22jNvLBrXGKr4CcV2tw8Ag" class="artista-item">
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNeGQJ4VM32NxIiL42Bv93vOmOmQFDzDeCPw&s" alt="Imagem Artista">
+                                <span>Jonas Esticado </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/5K8Rmjmf4RZFffz94EmBRt" class="artista-item">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Festa_da_virada_na_Beira_Rio_%282023_-_2024%29_03_%28cropped%29.jpg" alt="Imagem Artista">
+                                <span>Zé Vaqueiro</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/5Lv2GUVwqmQBPwrTrxucE5" class="artista-item">
+                            <div>
+                                <img src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2020/12/b756b18-N7fooRYo.jpg" alt="Imagem Artista">
+                                <span>Barões da Pisadinha</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/1tGLEVy901arulIovZtdLc" class="artista-item">
+                            <div>
+                                <img src="https://dicionariompb.com.br/wp-content/uploads/2021/04/3337372-luan-estilizado-falou-sobre-o-adiamento-624x600-2.jpg" alt="Imagem Artista">
+                                <span>Luan Estilizado</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            <p style="font-weight: 400;"> &copy; 2025. Sob Lincença Exclusiva e total liberdade criativa da equipe. Todos os direitos reservados.</p>
+        </footer>
+    </body>
 </html>
