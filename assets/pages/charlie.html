@@ -1,73 +1,209 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo_chorao.css"> 
-  <title>Artepédia</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  
-</head>
-<body>
+<html lang="pt-br"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArtistWiki - Lana Del Rey</title>
+        <link rel="stylesheet" href="../css/artista.css">
+    </head>
+    <body>
+        <header>
+            <a class="logo-nome" href="../../index.html" style="color: white;">Artepédia</a>
+            <ul>
+                <a href="#perfil">Perfil</a>
+                <a href="#lancamentos">Abuns</a>
+                <a href="#sobre">Sobre</a>
+            </ul>
+        </header>
+        <!-- 3 frações para o main, 1 fração para  -->
+        <div style="display: grid;
+        grid-template-columns: 3fr 1fr">
+            <main>
+                <section class="perfil" id="perfil">
+                    <div class="main">
+                        <div class="esquerda">
+                            <img class="image-perfil" style="border-radius: 50%;" src="https://cdn-images.dzcdn.net/images/artist/1a2e562dde23cdbd9abea4bae13eb4fc/1900x1900-000000-80-0-0.jpg" alt="Imagem de perfil Chorão">
+                        </div>
+                        <div class="direita">
+                            <h2 class="artistic-name">Charlie Brown jr</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="social">
+                        <div>
+                            <h3>Ouvir</h3>
+                            <ul>
+                                <li class="social-link">
+                                    <a href="https://www.youtube.com/channel/UC5k4fsA9AhxNLgMQa36CVdg"><img src="https://www.gstatic.com/kpui/listen/youtube_icon_44x44.png" alt="Icone YouTube">YouTube</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://open.spotify.com/intl-pt/artist/1on7ZQ2pvgeQF4vmIA09x5"><img src="https://www.gstatic.com/kpui/listen/spotify_44x44.png" alt="Icone Spotify">Spotify</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.youtube.com/channel/UCxVTgYCPCz5Iib9iik9M2bg"><img src="https://www.gstatic.com/kpui/listen/youtube_music_44x44.png" alt="Icone Youtube Music">YT Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.apple.com/br/artist/charlie-brown-jr/92451897"><img src="https://www.gstatic.com/kpui/listen/apple_music_icon_44x44.png" alt="Icone Apple Music">Apple Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://www.deezer.com/br/artist/8691"><img src="https://www.gstatic.com/kpui/listen/deezer_44X44.png" alt="Icone Deezer">Deezer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Perfis</h3>
+                            <ul>
+                                <li class="social-link"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjA1OvJ9bKNAxXODrkGHcSII-wQFnoECB0QAQ&url=https%3A%2F%2Fwww.instagram.com%2Fcharliebrownjr%2F%3Fhl%3Dpt-br&usg=AOvVaw3U4MDeKGbpXaaMvkm9ovSI&opi=899784490"><img src="data:image/png;base64,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" alt="Icone Instagram">Instagram</a></li>
+                                <li class="social-link"><a href="https://x.com/cbjroficial"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABhUlEQVR4AczOA6xcARCF4X/us23btuLUQR3WZlhbQW3bto2gtm3b2J3GN4tY74uHh3okOi42Nj4AAUDwTvDEhisABCOAEAzYTBh0bN+lc5d0QgAhHPqX4Y4pkd367Zc+xMcXCPDg8TPwxeQH724Uj9N95GJ4pnHxby1xgCmV3v+GsFb7k0Iee7UjaQgmIYe9v9O4+wUKWaATyMPAViwvr1NnOQWDdTV5CHYSaKWLmaGDyvU4mTgQcllracaFr+9uk+yLM8k8fAJff0IUTghRVFu3M1ynkYk4nchiqqU3Ry05RDibMMhjtj6Ht3dJxVk/l1G64cspOusychBsCWm01WNM0jFs0sbEYUtIIuTXNco588OLh09JxE6wweuXEAvfL9PQus3+iU80N34KCaQyUOcxTTuSjEmMRI5rS9JwIZfD1t7ceo34YIpnuQ4nGwP8XXlq/fJZd9jE8KBHC5IwAELJ7dWrZ6fOuNhkgFgAEEIAwA1MQkw0AgDC/wnKycrKSQ2iPAkAVyNzq8rxicIAAAAASUVORK5CYII=" alt="Icone X">X</a></li>
+                                <li class="social-link"><a href="https://www.youtube.com/channel/UC5k4fsA9AhxNLgMQa36CVdg"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEX/////z8//n5//kJD/gID/cHD/YGD/v7//39//ICD/AAD/r6//EBD/7+//oKD/MDD/QED/UFD/X1//j4//f396G04EAAAAhklEQVR4AeXQRQLDQAwDQC3bajj5/1dLYb63czYKf8VY50OcBO9swkyUB/SBkfJQlqOXeKJAz/FEQM9zVCqXInqRIy+RC9W+AJDypgCwyoGiV68LkLJFwX6CVJcr8nBwZJgLXMaDAs9RxsMcLE949IQnEnpoeKjEpC25o12OpVwkTURy/JQX1r4RC2S7kZYAAAAASUVORK5CYII=" alt="Icone YouTube">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="lancamentos">
+                    <h3>Albuns Populares</h3>
+                    <div class="albums">
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/1l8K5fgYz4J0ZZyjMVd6Q1">
+                            <img src="Imunidade_Musical (1).jpg" alt="Capa do Album Imunidade musical">
+                            <h4>Imunidade musical<span style="color: gray;">• 2005 - Álbum</span></h4>
+                        </a>
+                        <!--  -->
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/6oXMHZ4TuFId1OgRb4Eb3Y">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/e/ec/M%C3%BAsica_Popular_Cai%C3%A7ara.jpg" alt="Capa do Album Musica popular caiçara">
+                            <h4>Música popular caiçara <span style="color: gray;">• 2012 - Álbum</span></h4>
+                        </a>
+                        <!--  -->
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/2hLNxoJZ5kZoBEX0XGBRNu">
+                            <img src="Terceiro_album.jpg" alt="Capa do Album Preço curto, prazo longo">
+                            <h4>Preço curto, prazo longo <span style="color: gray;">• 1999 - Álbum</span></h4>
+                        </a>
+                          <a class="album" href="https://open.spotify.com/intl-pt/album/53GOG940xY4LOpgD8YzQrJ">
+                            <img src="la_familia_013 (2).jpg" alt="Capa do Album la_familia_013">
+                            <h4>La família 13 <span style="color: gray;">• 2013 - Álbum</span></h4>
+                        </a>
+                         <a class="album" href="https://open.spotify.com/intl-pt/album/6PsijYuoyIB4vgV5brmbhq">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Tamo_A%C3%AD_na_Atividade.jpg" alt="Capa do Album Tamo ai na atividade">
+                            <h4>Tamo ai na atividade<span style="color: gray;">• 2004 - Álbum</span></h4>
+                        </a>
+                         <a class="album" href="https://open.spotify.com/intl-pt/album/0wHl2FK2AEhwIiYISv7cJ4">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Ritmo_Ritual_Responsa.jpg" alt="Capa do Album Ritmo, ritual e responsa">
+                            <h4>Ritmo, Ritual e Responsa <span style="color: gray;">• 2007 - Álbum</span></h4>
+                        </a>
+                        
+                    </div>
+                </section>
+                <hr>
+                <section id="sobre" class="sobre">
+                    <h3>Sobre</h3>
+                    <p style="text-align: justify;">
+                      Charlie Brown Jr. foi uma banda brasileira de rock formada em 1992, em Santos (SP). Liderada pelo vocalista Chorão, misturava estilos como rock, punk, rap, reggae e skate culture em suas letras e som. Ficou conhecida por sucessos como Proibida Pra Mim, Zóio de Lula e Dias de Luta, Dias de Glória. A banda marcou gerações e teve grande influência na cena do rock nacional até o falecimento de Chorão em 2013.
+                    </p>                    
+                </section>
+            </main>
+            <aside>
+                <h3>Faixas Populares</h3>
+                <ul class="lista-faixas">
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/0AsfpL8bzbmEyJsfbPPYnj">
+                            <div>
+                                <img src="Terceiro_album.jpg" alt="Imagem Faixa">
+                                <span>Zóio de lua</span>
+                            </div>
+                            <span style="color: gray;">4:12</span>
+                        </a>
+                    </li>
 
-  <header>
-    <h1>A vida é feita de escolhas</h1>
-    <img src="https://www.theaudiodb.com/images/media/artist/logo/charlie-brown-jr-4e5ff2c391b2c.png" class="imagem">
-  </header>
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/3nI0piSOxAik2RCpHGloB7">
+                            <div>
+                                <img src="Imunidade_Musical (1).jpg" alt="Imagem Faixa">
+                                <span href="">Só os loucos sabem</span>
+                            </div>
+                            <span style="color: gray;">3:30</span>
+                        </a>
+                    </li>
 
-  <section id="introducao">
-    <h2>Introdução</h2>
-    <p>Charlie Brown Jr. foi uma banda brasileira de rock formada em 1992, em Santos (SP). Liderada pelo vocalista Chorão, misturava estilos como rock, punk, rap, reggae e skate culture em suas letras e som. Ficou conhecida por sucessos como Proibida Pra Mim, Zóio de Lula e Dias de Luta, Dias de Glória. A banda marcou gerações e teve grande influência na cena do rock nacional até o falecimento de Chorão em 2013.</p>
-  </section>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/track/006pMMCuRo2TFjh8sNGSov" class="faixa-item">
+                            <div>
+                                <img src="Imunidade_Musical (1).jpg" alt="Imagem Faixa">
+                                <span>Dias de luta, dias de gloria</span>
+                            </div>
+                            <span style="color: gray;">2:55</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/70dJEanFPdYuWZumkrnKeX">
+                            <div>
+                                <img src="Imunidade_Musical (1).jpg" alt="Imagem Faixa">
+                                <span>Ela Vai Voltar (Todos os Defeitos de Uma Mulher Perfeita)</span>
+                            </div>
+                            <span style="color: gray;">2:38</span>
+                        </a>
+                    </li>
 
-  <section id="historia">
-    <h2>História</h2>
-    <p>Idealizada pelo vocalista Alexandre Magno Abrão, mais conhecido como Chorão. A formação original incluía, além de Chorão, Thiago Castanho (guitarra), Marcão Britto (guitarra), Champignon (baixo) e Renato Pelado (bateria). O nome da banda foi inspirado em um grafite com o personagem Charlie Brown e o "Jr." foi adicionado por sugestão de Chorão para dar mais originalidade.</p>
+                    <li>
+                        <a class="faixa-item" href="https://open.spotify.com/intl-pt/track/4gEFeIEORz8thfqMY7nKcb">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e029ce3f2af269f08d61ac2ab9e" alt="Imagem Faixa">  
+                                <span>Lugar ao sol</span>
+                            </div>
+                            <span style="color: gray;">3:39</span>
+                        </a>
+                    </li>
 
-<br><b>Início e Mudanças na Formação</b><br>
-<p>No início, a banda passou por algumas dificuldades até assinar com a gravadora Virgin Records. Ao longo dos anos, ocorreram diversas mudanças na formação. Os membros mais constantes foram Chorão e, em parte da trajetória, Champignon. Houve brigas internas, principalmente entre Chorão e outros integrantes, que causaram afastamentos e retornos, como o de Champignon e Marcão em diferentes períodos. Em 2005, Thiago Castanho, que havia saído anos antes, retornou à banda.</p>
+                    
+                </ul>
+                <hr>
+                <h3>Artistas Recomendados</h3>
 
-<br><b>Carreira e Sucesso</b><br>
-<p>O primeiro álbum, Transpiração Contínua Prolongada (1997), foi um sucesso e lançou hits como Proibida pra Mim e O Coro Vai Comer. O segundo álbum, Preço Curto... Prazo Longo (1999), consolidou o sucesso com faixas como Zóio de Lula e Te Levar. Outros álbuns de destaque incluem Nadando com os Tubarões (2000), Abalando a Sua Fábrica (2001) e Bocas Ordinárias (2002).
-
-A banda misturava rock, rap, reggae, hardcore e skate, o que a fez se destacar por sua autenticidade e identificação com o público jovem. Charlie Brown Jr. recebeu diversos prêmios, incluindo Grammy Latino de Melhor Álbum de Rock Brasileiro por Camisa 10 Joga Bola Até na Chuva (2009). Os shows da banda sempre foram marcados por energia intensa, e eles tocaram em grandes festivais, como o Rock in Rio e o Planeta Atlântida.</p>
-
-<br><b>Morte de Chorão e Impacto</b><br>
-<p>Em 6 de março de 2013, Chorão foi encontrado morto em seu apartamento em São Paulo, vítima de uma overdose de cocaína. Sua morte causou grande comoção nacional, já que ele era visto como porta-voz da juventude e de temas como rebeldia, superação e críticas sociais. Meses depois, em setembro de 2013, o baixista Champignon também faleceu, vítima de suicídio, o que marcou tragicamente o fim da trajetória da banda.
-
-Charlie Brown Jr. se tornou um dos maiores nomes do rock brasileiro dos anos 2000. Sua música influenciou uma geração inteira, e suas letras continuam sendo lembradas por refletirem a vida urbana, os conflitos internos e o espírito do jovem brasileiro.</p>
-  </section>
-
-  <section id="curiosidades">
-    <h2>Albuns e musicas</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/48/Imunidade_Musical.jpg/250px-Imunidade_Musical.jpg">
-   <div>
-    <a href="https://open.spotify.com/intl-pt/album/1l8K5fgYz4J0ZZyjMVd6Q1" target="_blank">Visite o Album: Imunidade musical</a>
-   </div>
-   <img src="https://upload.wikimedia.org/wikipedia/pt/7/76/La_Fam%C3%ADlia_013.jpg" class="imagem_meio">
-   <div>
-    <a href="https://open.spotify.com/intl-pt/album/53GOG940xY4LOpgD8YzQrJ" target="_blank">Visite o Album: La Familia 13</a>
-   </div>
-  </section>
-
-  <section id="referencias">
-    <h2>redes sociais</h2>
-    <ol>
-      <li>Livro, artigo ou site usado como fonte.</li>
-      <li>Outras publicações relevantes.</li>
-    </ol>
-  </section>
-
-  <footer>
-    <p>Este conteúdo é de domínio público ou baseado em fontes abertas. Última atualização: Maio de 2025.</p>
-     <nav>
-    <a href="#introducao">Introdução</a>
-    <a href="#historia">História</a>
-    <a href="#curiosidades">Albuns e musicas</a>
-    <a href="#referencias">Perfis sociais</a>
-  </nav>
-
-  </footer>
-
+                <ul class="lista-artistas">
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/2Jw4Lrfjnyv2QsDoBgnrAP" class="artista-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d0000b273e61f4c27d2cf60ff659e2179" alt="Imagem Artista">
+                                <span>CPM 22</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/5AlUDdksfPP7l4Qm22MJA9" class="artista-item">
+                            <div>
+                                <img src="https://cdn-images.dzcdn.net/images/cover/f107da12f6c478c1ce413345f217ba40/0x1900-000000-80-0-0.jpg" alt="Imagem Artista">
+                                <span>Detonautas </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/1A5QJAC1vdhbhPE25Q0x0f" class="artista-item">
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYshUg_6pIbvlghkzDQ8kNoUh1pyAjNmwWpA&s" alt="Imagem Artista">
+                                <span>O Rappa</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/3nasa4yabzvUeb6DzejDYU" class="artista-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d8bedbdf2d6f558e234587c5" alt="Imagem Artista">
+                                <span>Planet Hemp</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/intl-pt/artist/5Q9RKJrjHdfpWVxzv45XTJ" class="artista-item">
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ48nQ1ajGp3t1XYfqeLbGmMinxMFpLTPr63g&s" alt="Imagem Artista">
+                                <span>Mamonas Assassinas</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            <p style="font-weight: 400;"> © 2025. Sob Lincença Exclusiva e total liberdade criativa da equipe. Todos os direitos reservados.</p>
+        </footer>
+    
 </body>
 </html>
